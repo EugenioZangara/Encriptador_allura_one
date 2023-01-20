@@ -1,0 +1,217 @@
+body {
+  min-width: 100vh;
+  min-height: 100vh;
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  background: #364652;
+  background-image: linear-gradient(#364652, #071108);
+}
+header{
+  max-height: 10%;
+}
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  background: #364652;
+  background-image: linear-gradient(#364652, #071108);
+  background-repeat: no-repeat;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  padding: 1px;
+  max-height: 90%;
+  
+}
+#logo {
+  min-width: 3%;
+  max-width: 5%;
+  height: auto;
+  margin: 2%;
+}
+
+#caja-izquierda {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 65%;
+  margin: 1%;
+  border: 1px solid black;
+  padding: 1px;
+  box-shadow: 6px 4px 8px;
+}
+
+
+
+#input-texto {
+  min-width: 80%;
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  justify-self: center;
+  margin: 1%;
+  border: none;
+  background-color: transparent;
+  overflow: hidden;
+  outline: none;
+}
+
+#info {
+  margin-left: 2%;
+  color:aliceblue
+}
+
+#botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2%;
+  min-height: 10%;
+}
+
+#btn-encriptar,
+#btn-desencriptar {
+  border-radius: 24px;
+  min-width: 45%;
+  min-height: 25%;
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+#btn-encriptar {
+  color: #c7dbe6;
+  background: #4f5357;
+}
+
+#btn-desencriptar {
+  color: antiquewhite;
+  background: #364652;
+}
+
+#btn-copiar {
+  display: none;
+  position: relative;
+  top: 6%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  min-width: 80%;
+  min-height: 10%;
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  color: rgb(47, 45, 43);
+  background: #c5d6e4;
+}
+
+#caja-derecha {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1%;
+  align-items: center;
+  background: #364652;
+  width: 30%;
+  max-height: 90%;
+  margin: 1%;
+  border: 1px solid yellow;
+  padding: 1px;
+  box-shadow: 6px 4px 8px;
+}
+
+#munieco {
+  max-width: 60%;
+  max-height: 40%;
+  margin: 3%
+}
+
+#mensaje-estado {
+  justify-content: center;
+  align-content: center;
+  height: 2.5rem;
+  padding: 3%;
+  color:aliceblue;
+}
+
+#respuesta {
+  min-width: 95%;
+  padding: 3%;
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  inline-size: 95%;
+  overflow-wrap: break-word;
+  color:aliceblue;
+}
+
+
+
+@media only screen and (min-width: 820px) and (max-width:1023px) {
+
+  /* For tablets: */
+body{
+  max-height:max-content;
+  justify-content: center;
+}
+
+ #caja-principal, header{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ #caja-derecha, #caja-izquierda{
+  justify-items: center;
+  width: 97%;
+  max-height: 100%;
+  height: 85vh;
+ }
+ #caja-derecha{
+  height: 40vh;
+ }
+
+ #mensaje-estado{
+  margin: 3%;
+  font-size: 24px;
+  color:aliceblue;
+ }
+ #munieco{
+  display: none;
+ }
+ #respuesta{
+  height: 30%;
+ }
+ #btn-copiar{
+  top: 30%;
+ }
+ #mensaje-estado{
+  top: 5%;
+  height: 10%;
+ }
+}
+@media only screen  and (max-width:767px) {
+
+  /* For phone: */
+  #caja-principal{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: 100vh;
+  }
+  #caja-izquierda, #caja-derecha{
+    width: 90vw;
+  }
+   #munieco{
+    display: none;
+   }
+   #btn-encriptar, #btn-desencriptar, #btn-copiar{
+    font-size: medium;
+   }
+  
+  }
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-la">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Encriptador - Challenge - Alura ONE</title>
+
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="sytle.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="/imagenes/Vector.webp" alt="logo Alura" id="logo" />
+  </header>
+  <main id="caja-principal">
+    <section id="caja-izquierda"> 
+        <textarea name="" id="input-texto" cols="30" rows="8" placeholder="Ingrese su texto aquí"></textarea>
+        <p id="info">&#8505; Solo letras minúsculas y sin acentos</p>
+        <div id="botones">
+          <button onclick="encriptar()" id="btn-encriptar">Encriptar</button>
+          <button onclick="desencriptar()" id="btn-desencriptar">Desencriptar</button>
+        </div>
+     
+    </section>
+    <section id="caja-derecha">
+      
+        <img src="imagenes/Munieco.png" alt="" id="munieco" />
+        <p id="respuesta"></p>
+        <p id="mensajes-estado">
+          Ingrese el texto que desea encriptar o desencriptar
+        </p>
+        <button id="btn-copiar" value="Copiar">Copiar Mensaje</button>
+      
+    </section>
+  </main>
+</body>
+
+</html>
+<script src="script.js"></script>

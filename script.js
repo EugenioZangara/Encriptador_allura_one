@@ -34,6 +34,7 @@ function encriptar() {
       "No se aceptan caracteres especiales, mayúsculas o tíldes, inténtelo de nuevo.";
     document.getElementById("btn-copiar").style.display = "none";
     munieco.src = "imagenes/prohibido.png";
+    document.getElementById("input-texto").value="";
   }
 }
 //*********************************************************************** */
